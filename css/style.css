@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 *{
     margin: 0px;
@@ -61,20 +61,20 @@ header>H1{
 
 .info-box>h1{
     color: #FF7A00;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Comfortaa', cursive, bold;
     grid-column-start: 2;
     grid-row-start: 1;
 }
 
 .info-box>p{
     width: auto;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Comfortaa', cursive;
     grid-column-start: 2;
     grid-row-start: 2;
 }
 
 .info-box>span{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Comfortaa', cursive;
     cursor: pointer;
     background: #FF7A00;
     border-radius: 16px;
@@ -98,11 +98,12 @@ header>H1{
 .content-box{
     grid-column-start: 2;
     grid-row-start: 3;
-    margin: 30px auto 30px auto;
+    margin: 30px auto 0px auto;
     width: 95%;
-    height: 90%;
+    height: 100%;
     background: rgba(255, 255, 255, 0.7);
-    border-radius: 85px;
+    border-top-right-radius: 85px;
+    border-top-left-radius: 85px;
     padding: 10px 10px 0px 10px;
 }
 
@@ -121,7 +122,7 @@ header>H1{
 .content-box-facts>h1{
     color: #FF7A00;
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Comfortaa', cursive, bold;
     font-size: 36px;
     position: relative;
     right: 20px;
@@ -142,112 +143,71 @@ header>H1{
 }
 
 .content-box-components{
-    margin-top: 170px;
+    margin-bottom: 150px;
 }
 
-.content-box-gus1{
+.content-box-components{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.content-box-gus1,
+.content-box-gus2,
+.content-box-gus3{
+    width: 100%;
     display: grid;
-    grid-template-columns: auto;
     grid-template-rows: auto;
-    float: left;
-    width: 50%;
+    grid-template-columns: 275px;
+}
+
+.content-box-gus1>h1,
+.content-box-gus2>h1,
+.content-box-gus3>h1{
+    color: #FF7A00;
+    text-align: center;
+    font-family: 'Comfortaa', cursive, bold;
+    font-size: 24px;
+    grid-row-start: 1;
+}
+
+.content-box-gus1>img,
+.content-box-gus2>img,
+.content-box-gus3>img{
     margin: 0 auto;
-}
-
-.content-box-gus1>h1{
-    grid-row-start: 1;
-    grid-column-start: 1;
-    color: #FF7A00;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 24px;
-    position: relative;
-    left: 5%;
-}
-
-.content-box-gus1>p{
     grid-row-start: 2;
-    grid-column-start: 1;
-    width: 40%;
-    position: relative;
-    left: 5%;
 }
 
-.content-box-gus1>img{ 
-    width: 30%;
-    position: relative;
-    left: 45%;
-    bottom: 80%;
+.content-box-gus1>img{
+    width: 70%;
 }
 
-.content-box-gus2{
-    position: relative;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    float: right;
+.content-box-gus2>img{
     width: 40%;
 }
 
-.content-box-gus2>h1{
-    grid-row-start: 1;
-    grid-column-start: 1;
-    color: #FF7A00;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 24px;
-    position: relative;
-    left: 5%;
-}
-
-.content-box-gus2>p{
-    grid-row-start: 2;
-    grid-column-start: 1;
+.content-box-gus3>img{
     width: 100%;
     position: relative;
-    left: 5%;
+    right: 10%;
+    top: 16px;
 }
 
-.content-box-gus2>img{ 
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    width: 90%;
-    position: relative;
-}
-
-.content-box-gus3{
-    position: relative;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    width: 60%;
-}
-
-.content-box-gus3>h1{
-    grid-row-start: 1;
-    grid-column-start: 1;
-    color: #FF7A00;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 24px;
-    position: relative;
-    left: 5%;
-}
-
+.content-box-gus1>p,
+.content-box-gus2>p,
 .content-box-gus3>p{
-    grid-row-start: 2;
-    grid-column-start: 1;
-    width: 40%;
-    position: relative;
-    left: 5%;
-}
-
-.content-box-gus3>img{ 
-    width: 40%;
-    position: relative;
-    bottom: 40%;
-    left: 30%;
+    text-align: center;
+    width: auto;
+    font-family: 'Comfortaa', cursive;
 }
 
 .buffer{
+    position: relative;
+    z-index: 2;
     text-align: center;
     height: 100%;
     width: 100%;
